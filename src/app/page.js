@@ -1,95 +1,45 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
+
+export default function Home ()
+{
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className='p-5 '>
+        <div className="text-center text-lg font-extrabold">Hello World!</div>
+        <div className="w-full h-10 bg-violet-200 border-violet-600 border-2 rounded-md my-4 p-2">
+          <div className="text-center font-mono">A div</div>
         </div>
+
+        {/* Layout */ }
+        <div className="fixed w-10 h-10 bg-red-500  top-0"></div>
+        <div className="flex justify-between">
+          <div className="h-16 w-16 rounded-full bg-blue-500"></div>
+          <div className="h-16 w-16 rounded-full bg-blue-500"></div>
+          <div className="h-16 w-16 rounded-full bg-blue-500"></div>
+        </div>
+        <div className="grid grid-cols-5 gap-2">
+          <div className="bg-violet-500 h-12 m-2"></div>
+          <div className="bg-violet-500 h-12 m-2"></div>
+          <div className="bg-violet-500 h-12 m-2"></div>
+          <div className="bg-violet-500 h-12 m-2"></div>
+          <div className="bg-violet-500 h-12 m-2"></div>
+        </div>
+
+        <div className="md:block hidden">
+          <p>I will appear for device resolution <span className="font-bold">{ '> > >' }</span> 768px </p>
+        </div>
+        <div className="max-md:block hidden">
+          <p>I will appear for device resolution <span className="font-bold">{ '< < <' }</span > 768px</p>
+        </div>
+        <button className="my-2 rounded-lg bg-gray-400 p-2 text-white hover:bg-gray-500 focus:outline-none focus:ring focus:ring-red-200 active:bg-blue-800">Click me</button>
+
+        <ul className="my-2 space-y-2">
+          <li className="bg-white p-2 first:bg-yellow-100">item</li>
+          <li className="bg-white p-2 odd:bg-blue-200 even:bg-green-200 first:bg-yellow-100">item</li>
+          <li className="bg-white p-2 odd:bg-blue-200 even:bg-green-200 first:bg-yellow-100">item</li>
+          <li className="bg-white p-2 odd:bg-blue-200 even:bg-green-200 first:bg-yellow-100">item</li>
+        </ul>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }
