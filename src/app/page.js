@@ -54,6 +54,7 @@ export default function Home ()
 
         </div>
       </div>
+      <div className="m-4 font-mono bg-chestnut">Implementing color from tailwind.config.js</div>
     </>
   );
 }
