@@ -1,7 +1,9 @@
 
+'use client';
 
 export default function Home ()
 {
+
   return (
     <>
       <div className='p-5 '>
@@ -39,6 +41,18 @@ export default function Home ()
           <li className="bg-white p-2 odd:bg-blue-200 even:bg-green-200 first:bg-yellow-100">item</li>
           <li className="bg-white p-2 odd:bg-blue-200 even:bg-green-200 first:bg-yellow-100">item</li>
         </ul>
+      </div>
+      {/* Theme dark: */ }
+      <div className="bg-white  m-5 py-2 rounded-lg">
+        <div className='m-10 rounded-lg px-6 py-8 shadow-xl ring-1 ring-slate-900/5 dark:bg-black'>
+          <h3 className='text-base font-medium tracking-tight text-slate-900 dark:text-white'>
+            This is a text element
+          </h3>
+          <p className='mt-2 text-sm text-slate-500 dark:text-blue-500'>
+            This is an even longer p tag element
+          </p>
+
+        </div>
       </div>
     </>
   );
